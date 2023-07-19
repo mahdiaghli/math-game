@@ -1,0 +1,184 @@
+html{
+    height: 100%;
+    background: radial-gradient(circle, #fff,#ccc);
+    background: -webkit-radial-gradient(circle, #fff,#ccc);
+    background: -o-radial-gradient(circle, #fff,#ccc);
+    background: -moz-radial-gradient(circle, #fff,#ccc);
+}
+
+#container {
+    background-color: #9DD2EA;
+    height: 400px;
+    width: 550px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 2px 0px #009de4;
+    -webkit-box-shadow: 0px 4px 2px 0px #009de4;
+    -moz-box-shadow: 0px 4px 2px 0px #009de4;
+    position: relative
+}
+
+#bestScore {
+    width:110px;
+    height: 50px;
+    background-color: rgba( 89, 38, 232, 0.508 );
+    text-align: center;
+    line-height:45px;
+    border-radius: 3px;
+    top: 15px;
+    position: absolute;
+    
+}
+
+#score {
+    background-color: #F1FF92;
+    color: #888E5F;
+    box-shadow: 0px 4px #9da853;
+    -moz-box-shadow: 0px 4px #9da853;
+    -webkit-box-shadow: 0px 4px #9da853;
+    padding: 11px;
+    left: 500px;
+    position: absolute;
+}
+
+#correct {
+    background-color: #42e252;
+    color: white;
+    padding: 11px;
+    left: 260px;
+    position: absolute;
+    display: none;
+}
+
+#wrong {
+    background-color: #de401a;
+    color: white;
+    padding: 11px;
+    left: 260px;
+    position: absolute;
+    display: none;
+}
+
+#question {
+    width: 450px;
+    height: 150px;
+    background-color: #9DA0EA;
+    color: black;
+    margin: 50px auto 10px auto;
+    box-shadow: 0px 4px #535aa8;
+    -moz-box-shadow: 0px 4px #535aa8;
+    -webkit-box-shadow: 0px 4px #535aa8;
+    text-align: center;
+    font-size: 100px;
+    font-family: cursive, sans-serif;
+}
+
+#instruction {
+    width: 450px;
+    height: 50px;
+    background-color: #B481D9;
+    box-shadow: 0px 4px #8153a8;
+    -webkit-box-shadow: 0px 4px #8153a8;
+    -moz-box-shadow: 0px 4px #8153a8;
+    text-align: center;
+    line-height: 45px;
+    margin: 10px auto;
+}
+
+#choices {
+    width: 450px;
+    height: 100px;
+    margin: 5px auto;
+}
+
+.box {
+    background-color: white;
+    width: 85px;
+    height: 85px;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    float: left;
+    margin-right: 36px;
+    text-align: center;
+    line-height: 80px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+}
+
+.box:hover,#startReset:hover{
+    background-color: #9C89F6;
+    color: white;
+    box-shadow: 0px 4px #6b54d3;
+    -moz-box-shadow: 0px 4px #6b54d3;
+    -webkit-box-shadow: 0px 4px #6b54d3;
+}
+
+.box:active,#startReset:active {  
+    box-shadow: 0px 0px #6b54d3;
+    -webkit-box-shadow: 0px 0px #6b54d3;
+    -moz-box-shadow: 0px 0px #6b54d3;
+    top: 4px;   
+}
+
+#box4 {
+    margin-right: 0px;
+}
+
+#startReset {
+    background-color: rgba(255,255,255,0.5);
+    width: 78px;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+}
+
+#timeRemaining {
+    width: 152px;
+/*    height: 50px;*/
+    position: absolute;
+    padding: 10px;
+    top: 395px;
+    left: 400px;
+    background-color: rgba(181,235,36,0.8);
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0,0,0,0.2);
+/*    visibility: hidden;*/
+    display:none;
+}
+
+#gameOver {
+    background: linear-gradient(#F3CA6B,#F3706C);
+    background: -webkit-linear-gradient(#F3CA6B,#F3706C);
+    background: -o-linear-gradient(#F3CA6B,#F3706C);
+    background: -moz-linear-gradient(#F3CA6B,#F3706C);
+    text-align: center;
+    color: white;
+    width: 500px;
+    height: 200px;
+    text-transform: uppercase;
+    position: absolute;
+    top: 100px;
+    left: 45px;
+    z-index: 2;
+/*    display: none;*/
+    font-size: 2.5em;
+    display: none;
+}
